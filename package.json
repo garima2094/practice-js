@@ -1,0 +1,9 @@
+{
+  "name": "practice-js",
+  "version": "1.0.0",
+  "description": "Daily LeetCode practice in JavaScript",
+  "private": true,
+  "scripts": {
+    "new": "node scripts/new-problem.js"
+  }
+}
