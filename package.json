@@ -3,7 +3,15 @@
   "version": "1.0.0",
   "description": "Daily LeetCode practice in JavaScript",
   "private": true,
+  "engines": {
+    "node": ">=18"
+  },
   "scripts": {
-    "new": "node scripts/new-problem.js"
+    "new": "node scripts/new-problem.js",
+    "run": "node scripts/run-problem.js",
+    "list": "node scripts/run-problem.js list",
+    "start": "node scripts/ui-server.js",
+    "ui": "node scripts/ui-server.js",
+    "ui:stop": "node scripts/stop-ui-server.js"
   }
 }

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LeetCode Practice</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="app">
+      <aside class="sidebar">
+        <header class="sidebar-header">
+          <h1>Practice JS</h1>
+          <p>LeetCode solutions</p>
+        </header>
+        <input
+          id="search"
+          type="search"
+          placeholder="Search by number or name..."
+          autocomplete="off"
+        />
+        <ul id="problem-list" class="problem-list"></ul>
+        <div id="pagination" class="pagination hidden">
+          <button id="prev-page" type="button" class="page-btn">Prev</button>
+          <span id="page-info" class="page-info"></span>
+          <button id="next-page" type="button" class="page-btn">Next</button>
+        </div>
+      </aside>
+
+      <main class="main">
+        <div id="mode-banner" class="mode-banner hidden" role="status"></div>
+
+        <div id="empty-state" class="empty-state">
+          <h2>Select a problem</h2>
+          <p>Pick one from the list to view the problem, solution, and run it.</p>
+        </div>
+
+        <div id="problem-view" class="problem-view hidden">
+          <header class="problem-header">
+            <div>
+              <p id="problem-meta" class="problem-meta"></p>
+              <h2 id="problem-title"></h2>
+              <p id="problem-path" class="problem-path"></p>
+            </div>
+            <button id="run-btn" type="button" class="run-btn">Run solution</button>
+          </header>
+
+          <div class="tabs">
+            <button class="tab active" data-tab="problem">Problem</button>
+            <button class="tab" data-tab="solution">Solution</button>
+            <button class="tab" data-tab="output">Output</button>
+          </div>
+
+          <section id="panel-problem" class="panel active">
+            <article id="problem-content" class="markdown"></article>
+          </section>
+
+          <section id="panel-solution" class="panel">
+            <div class="panel-toolbar">
+              <span class="panel-toolbar-label">solution.js</span>
+              <button id="copy-btn" type="button" class="copy-btn">Copy code</button>
+            </div>
+            <pre id="solution-content" class="code-block"></pre>
+          </section>
+
+          <section id="panel-output" class="panel">
+            <pre id="output-content" class="output-block">Run the solution to see output here.</pre>
+          </section>
+        </div>
+      </main>
+    </div>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
